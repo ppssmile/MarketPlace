@@ -13,7 +13,6 @@ public class ProductRepositoryImpl implements ProductRepository {
 
     private static List<Product> products;
 
-    @Autowired
     public ProductRepositoryImpl() {
         products=new ArrayList<>();
         setProducts();
