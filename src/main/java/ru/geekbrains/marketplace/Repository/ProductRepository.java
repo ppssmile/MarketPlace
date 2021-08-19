@@ -6,7 +6,6 @@ import java.util.List;
 
 
 public interface ProductRepository{
-    List<Product> products=null;
 
     List<Product> getProducts();
 

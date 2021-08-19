@@ -4,13 +4,13 @@ import ru.geekbrains.marketplace.Domain.Product;
 
 import java.util.Map;
 
-public interface Basket {
+public interface Card {
 
     Map<Integer, Product> getBasket();
 
-    void addProductBasket(Product product);
+    void addProductBasket(int id);
 
-    void removeProductBasket(Product product);
+    void removeProductBasket(int id);
 
     void addAllProductsBasket();
 }

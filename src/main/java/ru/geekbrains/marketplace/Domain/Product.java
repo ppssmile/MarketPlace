@@ -1,8 +1,5 @@
 package ru.geekbrains.marketplace.Domain;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Product {
 
     private int id;

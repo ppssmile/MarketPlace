@@ -8,10 +8,10 @@ import ru.geekbrains.marketplace.Repository.ProductRepository;
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository("ProductRepository")
+@Repository("productRepository")
 public class ProductRepositoryImpl implements ProductRepository {
 
-    private List<Product> products;
+    private static List<Product> products;
 
     @Autowired
     public ProductRepositoryImpl() {
@@ -21,7 +21,7 @@ public class ProductRepositoryImpl implements ProductRepository {
 
     @Override
     public List<Product> getProducts() {
-        return this.products;
+        return products;
     }
 
     @Override
